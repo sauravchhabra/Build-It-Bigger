@@ -1,0 +1,15 @@
+Oct 06, 2019 7:38:56 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\saura\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'D:\Android Apps\BuildItBigger\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+2019-10-06 19:39:01.242:INFO::main: Logging initialized @6502ms to org.eclipse.jetty.util.log.StdErrLog
+2019-10-06 19:39:01.295:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+Oct 06, 2019 2:09:01 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (D:\Android Apps\BuildItBigger\backend) is not equal to your 
+web application root (D:\Android Apps\BuildItBigger\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+2019-10-06 19:39:01.848:INFO:oejs.Server:main: jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_202-release-1483-b03
+2019-10-06 19:39:03.911:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@2b30a42c{/,file:///D:/Android%20Apps/BuildItBigger/backend/build/exploded-backend/,AVAILABLE}{D:\Android Apps\BuildItBigger\backend\build\exploded-backend}
+2019-10-06 19:39:03.911:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2019-10-06 19:39:03.911:INFO:oejs.session:main: node0 Scavenging disabled
+2019-10-06 19:39:03.935:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@72bc6553{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2019-10-06 19:39:03.936:INFO:oejs.Server:main: Started @9195ms

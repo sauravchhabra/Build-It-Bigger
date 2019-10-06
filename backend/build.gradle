@@ -35,7 +35,7 @@ dependencies {
 }
 
 appengine {
-    tools.cloudSdkHome = "/Users/saura/google-cloud-sdk"
+    tools.cloudSdkHome = "C:\\Users\\saura\\google-cloud-sdk"
 
     deploy {
         // The following is used for acceptance tests and
@@ -45,6 +45,13 @@ appengine {
         def promoteProp = findProperty("appengine.deploy.promote")
         if (promoteProp != null) {
             promote = new Boolean(promoteProp)
+        }
+    }
+
+    appengine {
+        run {
+            host = "0.0.0.0"
+            port = 8080
         }
     }
 }

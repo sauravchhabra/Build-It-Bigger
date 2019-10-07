@@ -3,6 +3,7 @@ package com.udacity.gradle.builditbigger;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.sauravchhabra.jokedisplayer.JokeDisplayActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -16,10 +17,11 @@ import java.io.IOException;
 public class JokeAsyncTask extends AsyncTask<Void, Void, String> {
 
     private static MyApi myApi = null;
-    private Context context;
+    private Context mContext;
+    private static final String LOG_TAG = JokeAsyncTask.class.getSimpleName();
 
     public JokeAsyncTask(Context context) {
-        this.context = context;
+        this.mContext = context;
     }
 
     @Override
@@ -43,14 +45,15 @@ public class JokeAsyncTask extends AsyncTask<Void, Void, String> {
         try {
             return myApi.getJoke().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            Log.e(LOG_TAG, e.getMessage());
+            return "";
         }
     }
 
     @Override
     protected void onPostExecute(String result) {
-        Intent intent = new Intent(context, JokeDisplayActivity.class);
+        Intent intent = new Intent(mContext, JokeDisplayActivity.class);
         intent.putExtra("joke", result);
-        context.startActivity(intent);
+        mContext.startActivity(intent);
     }
 }

@@ -13,3 +13,14 @@ You will not be able to access files from your working directory on the producti
 2019-10-06 19:39:03.911:INFO:oejs.session:main: node0 Scavenging disabled
 2019-10-06 19:39:03.935:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@72bc6553{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
 2019-10-06 19:39:03.936:INFO:oejs.Server:main: Started @9195ms
+Oct 06, 2019 2:09:03 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance default is running at http://localhost:8080/
+Oct 06, 2019 2:09:03 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8080/_ah/admin
+Oct 06, 2019 7:39:03 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFO: Dev App Server is now running
+2019-10-06 19:40:16.302:INFO:oejs.AbstractConnector:pool-1-thread-1: Stopped NetworkTrafficSelectChannelConnector@72bc6553{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2019-10-06 19:40:16.324:INFO:oejsh.ContextHandler:pool-1-thread-1: Stopped c.g.a.t.d.j.DevAppEngineWebAppContext@2b30a42c{/,file:///D:/Android%20Apps/BuildItBigger/backend/build/exploded-backend/,UNAVAILABLE}{D:\Android Apps\BuildItBigger\backend\build\exploded-backend}
+Oct 06, 2019 7:40:16 PM com.google.appengine.tools.development.AbstractModule shutdown
+INFO: Shutting down module instance default
+Shutting down.
